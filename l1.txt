@@ -1,0 +1,19 @@
+let obj = {
+    a:'1',
+    b:'2',
+}
+
+let obj1 = {};
+
+
+let arrKeys = Object.getOwnPropertyNames(obj);
+
+for (let i = 0; i <  Object.keys(obj).length; i++) {
+    
+    obj1[obj[arrKeys[i]]] = arrKeys[i];
+}
+
+obj = obj1;
+
+obj
+{1: 'a', 2: 'b'}

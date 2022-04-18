@@ -1,0 +1,13 @@
+let newWord = 'variable';
+
+let varWord = newWord.split('') 
+
+
+for (let i = 0; i < varWord.length-1; i++) {
+    for (let j = i+1; j < varWord.length; j++) {
+      if(varWord[i]===varWord[j]) 
+          console.log('isogam')
+    }    
+}
+
+ isogam

@@ -1,0 +1,24 @@
+
+const a  = {a:'1'};
+const b = {a:'1'};
+
+function getValue(obj,k){
+    
+return obj[k];
+}
+
+function shallowCompare(a,b){
+    for (let i = 0; i < Object.keys(a).length; i++) {
+        if(Object.keys(a).length !== Object.keys(b).length)
+    return false;
+        
+        if(getValue(a,'a')===getValue(b,'a'))
+            return  true;
+        else if(getValue(a,'a')!==getValue(b,'a'))
+            return false;
+        
+    }
+   
+     if(Object.keys(a).length===0 && Object.keys(b).length===0  )
+            return true;
+}
